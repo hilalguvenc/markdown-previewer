@@ -6,10 +6,10 @@ const Editor = (props) => {
     <div className="editor-wrap">
       <div className="toolbar">
         <i className="fab fa-free-code-camp"></i>
-        Editor
+        <span id="editor-text">Editor</span>
         <i className="fa fa-arrows-alt"></i>
       </div>
-      <textarea id="editor" type="text" value = {props.text}></textarea>
+      <textarea id="editor" type="text" value = {props.text} onChange={props.onChange}></textarea>
     </div>
   );
 };

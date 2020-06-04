@@ -51,10 +51,14 @@ const App = () => {
   ![React Logo w/ Text](https://goo.gl/Umyytc)
   `;
   const [content, setContent] = useState(placeHolder);
+
+  const changeText = (event) => {
+    setContent(event.target.value);
+  };
   return (
     <div>
-      <Editor text={content} />
-      <Previewer />
+      <Editor text={content} onChange={changeText} />
+      <Previewer deger={content} />
     </div>
   );
 };

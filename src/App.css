@@ -2,8 +2,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   background-color: #87b5b5;
+}
+#preview {
+  background-color: rgb(192, 216, 216);
+  width: 800px;
 }
 .editor-wrap {
   background-color: rgb(192, 216, 216);
@@ -12,24 +15,15 @@ body {
   border: 1px solid black;
   margin-bottom: 30px;
   width: 600px;
-  height: 250px;
+  height: 300px;
 }
 .preview-wrap {
-  background-color: rgb(192, 216, 216);
   overflow-y: scroll;
   overflow-x: hidden;
   border: 1px solid black;
   width: 800px;
-  height: 700px;
 }
-#editor {
-  width: 600px;
-  height: 250px;
-}
-#preview {
-  width: 800px;
-  height: 700px;
-}
+
 .toolbar {
   position: relative;
   background-color: #4aa3a3;
@@ -47,4 +41,17 @@ body {
 .fa-arrows-alt:hover{
   color: #57e2b1;
   cursor: pointer;
+}
+#markup{
+  position: relative;
+  text-align: start;
+  left: 20px;
+}
+#editor-text{
+  position: relative;
+  left: 7px;
+}
+#previewer-text{
+  position: relative;
+  left: 7px;
 }
