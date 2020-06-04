@@ -4,54 +4,81 @@ body {
   align-items: center;
   background-color: #87b5b5;
 }
-#preview {
-  background-color: rgb(192, 216, 216);
-  width: 800px;
-}
 .editor-wrap {
-  background-color: rgb(192, 216, 216);
   overflow-y: scroll;
   overflow-x: hidden;
   border: 1px solid black;
   margin-bottom: 30px;
   width: 600px;
-  height: 300px;
+  height: 250px;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
 }
 .preview-wrap {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   border: 1px solid black;
   width: 800px;
+  height: 100%;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  background-color: rgb(192, 216, 216);
 }
-
+#editor {
+  width: 600px;
+  height: 250px;
+  background-color: rgb(192, 216, 216);
+}
+#preview {
+  width: 700px;
+  background-color: rgb(192, 216, 216);
+  height: 100%;
+}
 .toolbar {
   position: relative;
   background-color: #4aa3a3;
   font-family: Russo One;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-align: left;
-  border : 1px solid #1d2f2f;
-  box-shadow: 1px  1px 10px 2px #3a5f5f;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
 }
-.fa-arrows-alt{
+.fa-arrows-alt {
   float: right;
   transform: rotate(45deg);
 }
-.fa-arrows-alt:hover{
+.fa-arrows-alt:hover {
   color: #57e2b1;
   cursor: pointer;
 }
-#markup{
+#markup {
   position: relative;
   text-align: start;
   left: 20px;
+  background-color: rgb(192, 216, 216);
+  font-size: 14px;
 }
-#editor-text{
+#editor-text {
   position: relative;
   left: 7px;
 }
-#previewer-text{
+#previewer-text {
   position: relative;
   left: 7px;
+}
+#markup h1 {
+  border-bottom: 2px solid black;
+  font-weight: 620;
+}
+#markup h2 {
+  border-bottom: 1px solid black;
+  font-weight: 620;
+}
+#markup pre code {
+  position: relative;
+  right: 15px;
+  background-color: white;
+  display: block;
+  width: 780px;
+}
+#markup p code {
+  background-color: white;
 }
