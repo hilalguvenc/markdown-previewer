@@ -17,19 +17,14 @@ body {
   overflow: hidden;
   border: 1px solid black;
   width: 800px;
-  height: 100%;
   box-shadow: 1px 1px 10px 2px #3a5f5f;
   background-color: rgb(192, 216, 216);
+  margin-bottom: 30px;
 }
 #editor {
   width: 600px;
   height: 250px;
   background-color: rgb(192, 216, 216);
-}
-#preview {
-  width: 700px;
-  background-color: rgb(192, 216, 216);
-  height: 100%;
 }
 .toolbar {
   position: relative;

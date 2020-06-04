@@ -15,8 +15,6 @@ const Previewer = (props) => {
         <i className="fa fa-arrows-alt"></i>
       </div>
       <span id="markup" dangerouslySetInnerHTML={rawMarkup()}/>
-      <textarea id="preview" type="text">
-      </textarea>
     </div>
   );
 };
