@@ -3,11 +3,14 @@ import "./App.css";
 import Previewer from "./previewer";
 import Editor from "./editor";
 
+
 function App() {
+  
+  
   return (
     <div>
-      <Editor />
-      <Previewer />
+      <Editor/>
+      <Previewer/>
     </div>
   );
 }

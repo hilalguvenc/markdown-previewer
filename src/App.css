@@ -32,14 +32,19 @@ body {
 }
 .toolbar {
   position: relative;
-  border: 1px solid black;
   background-color: #4aa3a3;
   font-family: Russo One;
   font-size: 20px;
   font-weight: bold;
   text-align: left;
+  border : 1px solid #1d2f2f;
+  box-shadow: 1px  1px 10px 2px #3a5f5f;
 }
 .fa-arrows-alt{
   float: right;
   transform: rotate(45deg);
+}
+.fa-arrows-alt:hover{
+  color: #57e2b1;
+  cursor: pointer;
 }
