@@ -1,15 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-function Editor(props) {
-  const [value, setValue] = useState(
-    "# Welcome to my React Markdown Previewer!"
-  );
-
-  const changeTextArea = (event) => {
-    setValue({ value: event.target.value });
-  };
-
+const Editor = (props) => {
   return (
     <div className="editor-wrap">
       <div className="toolbar">
@@ -17,13 +9,8 @@ function Editor(props) {
         Editor
         <i className="fa fa-arrows-alt"></i>
       </div>
-      <textarea
-        id="editor"
-        type="text"
-        value={value}
-        onChange={changeTextArea}
-      ></textarea>
+      <textarea id="editor" type="text" value = {props.text}></textarea>
     </div>
   );
-}
+};
 export default Editor;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-function Previewer() {
+const Previewer = (props) => {
   return (
     <div className="preview-wrap">
       <div className="toolbar">
@@ -12,5 +12,5 @@ function Previewer() {
       <textarea id="preview" type="text"></textarea>
     </div>
   );
-}
+};
 export default Previewer;
