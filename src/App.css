@@ -9,9 +9,12 @@ body {
   overflow-x: hidden;
   border: 1px solid black;
   margin-bottom: 30px;
+  margin-top: 30px;
   width: 600px;
   height: 250px;
   box-shadow: 1px 1px 10px 2px #3a5f5f;
+  position: relative;
+  left: 100px;
 }
 .preview-wrap {
   overflow: hidden;
