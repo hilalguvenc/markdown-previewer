@@ -47,6 +47,13 @@ body {
   color: #57e2b1;
   cursor: pointer;
 }
+.fa-compress-alt{
+  float: right;
+}
+.fa-compress-alt:hover{
+  color: #57e2b1;
+  cursor: pointer;
+}
 #markup {
   position: relative;
   text-align: start;

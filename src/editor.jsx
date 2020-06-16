@@ -3,19 +3,27 @@ import "./App.css";
 
 const Editor = (props) => {
   const [editorWiden, setEditorWiden] = useState(false);
- 
-  const changeExtend =()=>{
-    setEditorWiden(!editorWiden);
-  }
 
+  const change = () => {
+    setEditorWiden(!editorWiden);
+  };
   return (
     <div className="editor-wrap">
       <div className="toolbar">
         <i className="fab fa-free-code-camp"></i>
         <span id="editor-text">Editor</span>
-        <i className="fa fa-arrows-alt" onClick={changeExtend}></i>
+        {editorWiden == false ? (
+          <i className="fa fa-arrows-alt" onClick={change}></i>
+        ) : (
+          <i class="fas fa-compress-alt" onClick={change}></i>
+        )}
       </div>
-      <textarea id="editor" type="text" value = {props.text} onChange={props.onChange}></textarea>
+      <textarea
+        id="editor"
+        type="text"
+        value={props.text}
+        onChange={props.onChange}
+      ></textarea>
     </div>
   );
 };
